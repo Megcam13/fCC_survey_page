@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+   <title>Hiking in Colorado Survey</title>
+
+  <!--   Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rancho&display=swap" rel="stylesheet">
+
+<!-- CSS sheet- not use for codepen.io -->
+<link rel= "stylesheet" href= "survey.css"></link>
+
+</head>
+  
+<body>
+  
+<!--   Header -->
+ <header>
+   <div id = "header-box">
+   <h1 id= "title">Hiking in Colorado       
+     <br> Survey Form</h1> 
+    
+     <p id= "description"> Tell Us About Your Hiking Experience! </p>
+     
+  </div>
+   </header>
+  
+   <img src="https://cdn2.vectorstock.com/i/thumb-large/79/56/cartoon-hiker-at-sunset-background-vector-13667956.jpg" alt="Hiker on top of a mountain with multi color background" id="adventure-image">
+  
+<!--   Form -->
+  <form action="" id= "survey-form">
+    
+    <!--     Name -->
+    <div class= "section-style">
+      <label for="name" id= "name-label" class= "form-category"> Name: </label>
+    <input 
+           type="text" 
+           name = "name"
+           id= "name"
+           class= "input-section"
+           placeholder = "Enter your name"
+           required
+         >
+    </div> 
+    
+    <!-- Email -->
+    <div class= "section-style">
+      <label for="email" id= "email-label" class= "form-category"> Email: </label>
+      <input 
+             type="email" 
+             name= "email" 
+             id= "email" 
+             class= "input-section"
+             placeholder= "Email address"
+             required
+             >   
+    </div>
+ 
+    <!-- Age -->
+    <div class= "section-style">
+      <label for="number" id= "number-label" class= "form-category"> Age: </label>
+        <input 
+               type="number"
+               name= "age"
+               id= "number"
+               class= "input-section"
+               min ="0"
+               max= "110"
+               placeholder= "Age"
+               required               
+             >
+    </div>
+
+<!--   Where are you from- radio buttons -->
+    <div class= "section-style">
+      <label for="location" class= "form-category">Where are you from?</label>
+      
+      <label class= "position-buttons">
+        <input 
+             name = "location"
+             value= "A Colorado Mountain Town"
+             type="radio"
+             class = "button-style"  
+             checked
+             > 
+        <span class= "radio">A Colorado Mountain Town</span>
+        </label>
+     
+      <label class= "position-buttons">
+        <input 
+             name = "location"
+             value= "The Denver Area"
+             type="radio"
+             class = "button-style"  
+             > 
+        <span class= "radio">The Denver Area</span>
+        </label>
+
+      <label class= "position-buttons">
+        <input 
+             name = "location"
+             value= "Colorado Springs Area"
+             type="radio"
+             class = "button-style"  
+             > 
+        <span class= "radio">Colorado Springs Area</span>
+        </label>
+
+      <label class= "position-buttons">
+        <input 
+             name = "location"
+             value= "Southern Colorado (Pueblo & South)"
+             type="radio"
+             class = "button-style"  
+             > 
+        <span class= "radio">Southern Colorado (Pueblo & South)</span>
+        </label>
+
+      <label class= "position-buttons">
+        <input 
+             name = "location"
+             value= "SouthWest Colorado"
+             type="radio"
+             class = "button-style"  
+             > 
+        <span class= "radio">SouthWest Colorado</span>
+        </label>
+      
+          <label class= "position-buttons">
+        <input 
+             name = "location"
+             value= "Eastern Colorado"
+             type="radio"
+             class = "button-style"  
+             > 
+        <span class= "radio">Eastern Colorado</span>
+        </label>
+      
+          <label class= "position-buttons">
+        <input 
+             name = "location"
+             value= "Out of State but in the US"
+             type="radio"
+             class = "button-style"  
+             > 
+        <span class= "radio">Out of State but in the US</span>
+        </label>
+        
+         <label class= "position-buttons">
+          <input 
+             name = "location"
+             value= "Out of the Country"
+             type="radio"
+             class = "button-style"  
+             > 
+        <span class= "radio">Out of the Country</span>
+        </label>
+</div>
+    
+ <!-- Frequency of Hiking-dropdown selection -->
+  <div class= "section-style">      
+      <label for="dropdown" class= "form-category"> How often do you hike in Colorado each year?</label>
+          <select name="dropdown" id="dropdown" class= "input-section">
+            <option disabled selected value id="disabled">Select</option>
+            <option value="Daily">Daily</option>
+            <option value="Several times a week">Several times a week</option>
+             <option value="Every week/weekend">Every week or weekend</option>
+            <option value="Several times a month">At least several times a month</option>
+            <option value="Every month">At least once a month</option>
+            <option value="Every few months">Every 2-3 months</option>
+            <option value="A few times a year">A few times a year</option>
+            <option value="Yearly">Maybe once a year or so</option>
+            <option value="Rarely">Rarely, hiking isn't my thing</option>        
+        </select>
+ </div>
+    
+ <!--  Fav areas to hike- Checkbox Section --> 
+   <div class= "section-style">
+     <label for= "favorite areas" class= "form-category">What are your favorite spots to hike in Colorado?</label>
+     
+        <label class = "position-checkboxes">
+          <input 
+             name = "favorite areas"
+             value= "The Rocky Mountain National Park- areas such as Emerald Lake, Grand Lake, Longs Peak & Estes Park." 
+             type="checkbox"
+             class = "checkbox-style"  
+             > 
+        <span class= "checkbox">The Rocky Mountain National Park- areas such as Emerald Lake, Grand Lake, Longs Peak & Estes Park.</span>
+       </label>
+     
+      <label class = "position-checkboxes">
+          <input 
+             name = "favorite areas"
+             value= "Around summit areas such as Aspen, Vail, Breckenridge, Keystone & Crested Butte." 
+             type="checkbox"
+             class = "checkbox-style"  
+             > 
+        <span class= "checkbox">Around summit areas such as Aspen, Vail, Breckenridge, Keystone & Crested Butte.</span>
+      </label>
+             
+       <label class = "position-checkboxes">
+          <input 
+             name = "favorite areas"
+             value= "NorthWest Colorado- areas around Grand Junction & Dinosaur National Monument." 
+             type="checkbox"
+             class = "checkbox-style"  
+             > 
+        <span class= "checkbox">NorthWest Colorado- areas around Grand Junction & Dinosaur National Monument.</span>
+       </label>
+             
+        <label class = "position-checkboxes">
+          <input 
+             name = "favorite areas"
+             value= "Areas around Boulder such as the Flatirons, Indian Peaks Wilderness & Eldorado Canyon State Park."
+                 type = "checkbox"
+             class = "checkbox-style"  
+             > 
+        <span class= "checkbox">Areas around Boulder such as the Flatirons , Indian Peaks Wilderness & Eldorado Canyon State Park.</span>
+       </label>
+     
+       <label class = "position-checkboxes">
+          <input 
+             name = "favorite areas"
+             value= "The Denver area- Red Rocks, Rocky Mountain Arsenal Wildlife Refuge, Cherry Creek State Park & Chatfield State Park." 
+             type="checkbox"
+             class = "checkbox-style"  
+             > 
+        <span class= "checkbox">The Denver area- Red Rocks, Rocky Mountain Arsenal Wildlife Refuge, Cherry Creek State Park & Chatfield State Park.</span>
+     </label>
+ 
+     <label class = "position-checkboxes">
+          <input 
+             name = "favorite areas"
+             value= "Areas between Denver& Colorado Springs such as Castlewood Canyon, Devil's Head & Perry Park." 
+             type="checkbox"
+             class = "checkbox-style"  
+             > 
+        <span class= "checkbox">Areas between Denver & Colorado Springs such as Castlewood Canyon, Devil's Head & Perry Park.</span>
+      </label>
+     
+      <label class = "position-checkboxes">
+          <input 
+             name = "favorite areas"
+             value= "Colorado Springs Area- such as Garden of the Gods, Manitou Springs, Paint Mines & Cheyenne Mountain Area." 
+             type="checkbox"
+             class = "checkbox-style"  
+             > 
+        <span class= "checkbox">Colorado Springs Area- such as Garden of the Gods, Manitou Springs, Paint Mines & Cheyenne Mountain Area.</span>
+        </label>
+     
+      <label class = "position-checkboxes">
+          <input 
+             name = "favorite areas"
+             value= "Pike & San Isabel National Forest Area- such as Pikes Peak, Lake George & Buena Vista." 
+             type="checkbox"
+             class = "checkbox-style"  
+             > 
+        <span class= "checkbox">Pike & San Isabel National Forest Area- such as Pikes Peak, Lake George & Buena Vista.</span>
+        </label>
+     
+      <label class = "position-checkboxes">
+          <input 
+             name = "favorite areas"
+             value= "SouthWest Colorado & San Juan National Forest areas such as The Four Corners, Durango & Telluride." 
+             type="checkbox"
+             class = "checkbox-style"  
+             > 
+        <span class= "checkbox">SouthWest Colorado & San Juan National Forest areas such as The Four Corners, Durango & Telluride.</span>
+        </label>
+     
+           <label class = "position-checkboxes">
+          <input 
+             name = "favorite areas"
+             value= "Southern Colorado areas such as Wolf Creek Pass, Great Sand Dunes National Park & Spanish Peaks." 
+             type="checkbox"
+             class = "checkbox-style"  
+             > 
+        <span class= "checkbox">Southern Colorado areas such as Wolf Creek Pass, Great Sand Dunes National Park & Spanish Peaks.</span>
+        </label>
+     
+           <label class = "position-checkboxes">
+          <input 
+             name = "favorite areas"
+             value= "Any & all of Colorado's 14er's (encompasses 58 mountains over 14,000ft in Colorado)." 
+             type="checkbox"
+             class = "checkbox-style"  
+             > 
+        <span class= "checkbox">Any & all of Colorado's 14er's (encompasses 58 mountains over 14,000ft in Colorado).</span>
+        </label>
+     
+      <label class = "position-checkboxes">
+          <input 
+             name = "favorite areas"
+             value= "Out on the Eastern Great Plains." 
+             type="checkbox"
+             class = "checkbox-style"  
+             > 
+        <span class= "checkbox">Out on the Eastern Great Plains.</span>
+        </label>
+    
+</div>
+    
+    <!-- Comments Section -->
+ <div class= "section-style">
+     <label for= "comments" class= "form-category">Tell us what you love about hiking in Colorado and what can be done to improve your experience:</label>
+    <textarea id= "textarea" placeholder= "Enter your comment here"></textarea>   
+    </div>
+   
+   <!-- Submit Button -->
+    <div>
+      <button id= "submit" type= "submit">
+        Submit
+      </button>
+    </div>
+    
+  </form>
+  
+  
+<!--   Footer -->
+ <footer> MC Web Dev & Design | © <span class="current-year"></span></footer>
+  
+
+<!-- JS page for updating year on footer -->
+<script src="survey.js"></script>
+ 
+
+<!--   fCC JS test -->
+ <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  
+</body>
+  
+</html>

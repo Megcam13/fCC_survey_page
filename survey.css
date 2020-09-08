@@ -1,0 +1,223 @@
+/* Overall Form CSS*/
+:root {
+    --color-darkOrange: #B4663D;
+   --color-lightOrange: #DC946C;
+   --color-peachy: #FFEACC; 
+   --color-box-text-grey: #4A5B55;
+ }
+ 
+ *,
+ *::before {
+   box-sizing: border-box;
+ }
+ 
+ body {
+   color: var(--color-peachy);
+   text-align: center;
+   font-family: 'Open Sans', sans-serif;
+   letter-spacing: 0.2px;
+ }
+ 
+ 
+ /* Transparent Box- header & form */ 
+ #header-box {
+   display: block;
+   width: 40%;
+   padding: 5px;
+   margin: 3% auto;
+   background-color: rgba(121, 144, 175, 0.5);
+ }
+ 
+ #survey-form {
+   display: block;
+   padding: 5px;
+   width: 50%;
+   margin: 40px auto;
+   background-color: rgba(121, 144, 175, 0.5);
+ }
+ 
+ @media(max-width: 650px) {
+   #header-box, #survey-form {
+     width: 90%;
+   }
+ }
+  
+ #title {
+   color: var(--color-darkOrange);
+   font-size: 4em;
+   letter-spacing: 3px;  
+ }
+ 
+ #description {
+   letter-spacing: 1.5px;
+   font-size: 1.5em;
+ }
+ 
+ #title, #description {
+   font-family: 'Rancho', cursive;  
+ }
+ 
+ #adventure-image {
+   width: 15%;
+   height: 30%;
+   margin: 4% auto 1% auto;
+   border-radius: 10%;
+   opacity: 0.8;
+ }
+ 
+ @media (max-width: 650px) {
+   #adventure-image{
+     width: 50%;
+     height: 50%;
+     margin-top: 17%;
+   }
+ }
+ 
+ 
+ /* Background */
+ body::before {
+   content: "";
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   background-image: linear-gradient(
+       115deg,
+       rgba(71, 141, 118, 0.8), 
+       rgba(113, 170, 151, 0.7)
+     ), url("https://bloximages.newyork1.vip.townnews.com/outtherecolorado.com/content/tncms/assets/v3/editorial/6/62/66246c6d-5c4f-5a9d-8591-c11496a230ce/5eecdfd545a58.image.jpg?resize=1700%2C1133");
+   background-size: cover;
+   background-repeat: repeat;
+   background-position: center;
+ }
+ 
+ 
+ /* Overall Survey Form */
+ .section-style {
+   margin: 4px auto 0 auto;
+   padding: 0.25em;
+ }
+ 
+ 
+ label {
+   display: block;
+   align-items: center;
+   font size: 1.2em;
+   margin-bottom: 0.5em;
+ }
+ 
+ .form-category {
+   font-family: 'Rancho', cursive;
+   letter-spacing: 1.5px;
+   font-size: 1.5em;
+   margin: 2%;
+ }
+ 
+ .input-section {
+   display: center;
+   height: 3.25em;
+   padding: 1em;
+   margin-left: 2%;
+   font-family: 'Open Sans', sans-serif;
+   letter-spacing: 0.2px;
+   color: var(--color-box-text-grey);
+   background-color: var(--color-lightOrange);
+   background-clip: padding-box;
+   border: 1px solid #DC946C;
+   border-radius: 7px;
+ }
+ 
+ 
+ /* Name & email section */
+ #name, #email {
+   width: 60%;
+ }
+ 
+ @media (max-width: 650px) {
+   #name, #email  {
+     width: 80%;
+   }
+ }
+ 
+ 
+ /* Buttons & Checkboxes*/
+ .position-buttons {
+   text-align: center;
+   margin: 1% 25%;
+ }
+ 
+ @media(max-width: 650px) {
+   .position-buttons {
+     text-align: left;
+     margin: 3.5%  ; 
+   }
+ }
+ 
+ .position-checkboxes {
+     text-align: left;
+     margin: 2% 8%;
+ }
+ 
+ .position-buttons, .position-checkboxes {
+     display: flex;
+     align-items: flex-start;
+ }
+ 
+ .button-style, .checkbox-style {
+   margin: 0.5em;
+ }
+ 
+ .radio, .checkbox{
+   margin-right: 1em;
+   color: var(--color-darkOrange);
+   font-weight: 600;
+ }
+ 
+ 
+ /* Dropdown box */
+ #dropdown {
+   height: 3.5em;
+ }
+ 
+ #disabled {
+   color: #717d79;
+ }
+ 
+ 
+ /* Comments Section */
+  #textarea {
+   padding: 10px;
+   min-height: 15em;
+   width: 80%;
+   font-family: 'Open Sans', sans-serif;
+   letter-spacing: 0.2px;
+   color: var(--color-box-text-grey);
+   background-color: var(--color-lightOrange);
+   border: 1px solid #DC946C;
+   resize: vertical;
+ }
+ 
+ 
+ /* Submit Button */
+ #submit {
+   height: 3em;
+   width: 30%;
+   margin: 8%;
+   background: var(--color-lightOrange);
+   color: var(--color-box-text-grey);
+   font-family: 'Rancho', cursive;
+   font-size: 1.25em;
+   font-weight: 600;
+   letter-spacing: 1.5px;
+   background-clip: padding-box;
+   border: 1px solid #B4663D;
+   cursor: pointer;
+ }
+ 
+ 
+ /* Footer */
+ footer {
+   margin: 3em auto 0.5em auto;
+ }
