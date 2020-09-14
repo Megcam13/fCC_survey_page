@@ -2,4 +2,4 @@
 
 My second free code camp project in plain HTML & CSS. This page is a survey page regarding hiking in Colorado.
 
-Page preview: https://user-images.githubusercontent.com/46332010/93141589-b4b2b680-f6a1-11ea-8dec-9f23d31d7038.JPG
+Page preview: https://user-images.githubusercontent.com/46332010/93144447-3d802100-f6a7-11ea-9789-876b52513729.JPG
